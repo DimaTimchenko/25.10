@@ -1,0 +1,83 @@
+.page {
+  width: 710px;
+  margin: 0 auto;
+
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  height: 46px;
+  padding-left: 55px;
+  background-color: #c22e47;
+}
+
+.writers {
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  margin-right: 28px;
+}
+
+.menu-link {
+  color: white;
+  font-size: 12px;
+  line-height: 46px;
+  padding: 0 16px;
+}
+
+.active {
+  background-color: #7a2331;
+}
+
+.content {
+  display: flex;
+}
+
+.text-block {
+  width: 520px;
+  padding: 10px 12px 10px 55px;
+}
+
+.title {
+  font-size: 18px;
+  margin-top: 6px;
+  margin-bottom: 12px;
+}
+.text {
+  font-size: 11.5px;
+  line-height: 1.5;
+  margin-bottom: 12px;
+  text-align: justify;
+}
+
+
+.info-block {
+  width: 190px;
+  padding: 10px;
+}
+
+.info {
+  background-color: #e4e4e4;
+  padding: 12px;
+}
+.table {
+  font-size: 9px;
+  border-spacing: 0;
+}
+
+.label {
+  font-weight: bold;
+  padding-right: 12px;
+}
+
+.authors {
+  display: flex;
+  padding: 12px 55px 14px 55px;
+}
+
+.author-photo {
+  width: 80px;
+  height: 100px;
+  margin-right: 18px;
+}
