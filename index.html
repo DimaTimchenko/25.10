@@ -2,100 +2,154 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Choose your plan</title>
+<title>English tenses</title>
 <style>
-    div {
-        width: 900px;
-        margin: 30px;
-        border-radius: 12px;
-        overflow: hidden;
-    }
+ 
 
     table {
-        width: 900px;
+        width: 1000px;
         border-collapse: collapse;
     }
 
-    th {
-        color: white;
-        padding: 15px;
-    }
-
-    td {
-        padding: 15px;
+    td, th {
+        border: 1px solid gray;
+        padding: 10px;
         text-align: center;
     }
 
-    .dark {
-         background: #ddd; 
+    .yellow {
+         background: #e0c357; 
         }
-    .light { 
-        background: #eee; 
+    .simple { 
+        background: #2b2bdd; 
+    }
+    .prog {
+         background: #fc0505; 
         }
+    .perf {
+         background: #05f565; 
+        }
+    .pp {
+         background: #ffbbff; 
+        }
+
+
 </style>
 </head>
 <body>
 
-<div>
-    <table>
-        <tr>
-            <th style="background: #7783a9">Choose your plan</th>
-            <th style="background: #4c5f8f">starter <h2>$10</h2> per month</th>
-            <th style="background: #2e4274">econom <h2>$30</h2> per month</th>
-            <th style="background: #172857">standard <h2>$59</h2> per month</th>
-            <th style="background: #05123a">professional <h2>$99</h2> per month</th>
-        </tr>
-        <tr class="dark">
-            <td>Amount of space</td>
-            <td>20GB</td>
-            <td>40GB</td>
-            <td>110GB</td>
-            <td>Unlimited</td>
-        </tr>
-        <tr class="light">
-            <td>Bandwidth per month</td>
-            <td>120GB</td>
-            <td>240GB</td>
-            <td>610GB</td>
-            <td>1300GB</td>
-        </tr>
-        <tr class="dark">
-            <td>Email accounts</td>
-            <td>1</td>
-            <td>15</td>
-            <td>60</td>
-            <td>Unlimited</td>
-        </tr>
-        <tr class="light">
-            <td>MySQL databases</td>
-            <td>1</td>
-            <td>15</td>
-            <td>60</td>
-            <td>Unlimited</td>
-        </tr>
-        <tr class="dark">
-            <td>25h support</td>
-            <td>No</td>
-            <td>Yes</td>
-            <td>Yes</td>
-            <td>Yes</td>
-        </tr>
-        <tr class="light">
-            <td>Support tickets per month</td>
-            <td>2</td>
-            <td>6</td>
-            <td>14</td>
-            <td>20</td>
-        </tr>
-        <tr class="dark">
-            <td></td>
-            <td><button>START</button></td>
-            <td><button>START</button></td>
-            <td><button>START</button></td>
-            <td><button>START</button></td>
-        </tr>
-    </table>
-</div>
+<table>
+    <tr>
+        <th colspan="2" class="yellow">ASPECT</th>
+        <th class="simple">SIMPLE</th>
+        <th class="prog">PROGRESSIVE</th>
+        <th class="perf">PERFECT</th>
+        <th class="pp">PERFECT PROGRESSIVE</th>
+    </tr>
+    <tr>
+        <td colspan="2" rowspan="2" class="yellow"><b>MEANING</b></td>
+        <td class="simple"><i>a common aspect</i></td>
+        <td class="prog"><i>a process</i></td>
+        <td class="perf"><i>priority</i></td>
+        <td class="pp"><i>priority + process</i></td>
+    </tr>
+    <tr>
+        <td class="simple"><b>When?</b></td>
+        <td class="prog"><b>At what time?</b></td>
+        <td class="perf"><b>By what time?</b></td>
+        <td class="pp"><b>Since what time? How long?</b></td>
+    </tr>
+
+    <tr>
+        <td colspan="2" class="yellow">Period of time</td>
+        <td class="simple">usually, often, always, seldom, every day (week, month, year)</td>
+        <td class="prog">now, at the moment</td>
+        <td class="perf">ever, never, just, already, not..yet, by 3 p.m.</td>
+        <td class="pp">since 3 p.m., for a long time, for a month</td>
+    </tr>
+    <tr>
+        <td rowspan="3" class="yellow">Present</td>
+        <td class="yellow">+</td>
+        <td class="simple">V/Vs</td>
+        <td class="prog">am/is/are + Ving</td>
+        <td class="perf">have/has + Ved/V<sub>3</sub></td>
+        <td class="pp">have/has + been + Ving</td>
+    </tr>
+    <tr>
+        <td class="yellow">?</td>
+        <td class="simple">do/does + V</td>
+        <td class="prog">inversion</td>
+        <td class="perf">inversion</td>
+        <td class="pp">inversion</td>
+    </tr>
+    <tr>
+        <td class="yellow">-</td>
+        <td class="simple">do/does + not + V</td>
+        <td class="prog">am/is/are + not + Ving</td>
+        <td class="perf">have/has + not + Ved/V<sub>3</sub></td>
+        <td class="pp">have/has + not + been + Ving</td>
+    </tr>
+
+    <tr>
+        <td colspan="2" class="yellow">Period of time</td>
+        <td class="simple">yesterday, last week (month, year), long ago</td>
+        <td class="prog">yesterday at 3p.m., yesterday from 6 till 7, when you came</td>
+        <td class="perf">yesterday by 3p.m., before some time in the past</td>
+        <td class="pp">yesterday since 3p.m., for some time in the past</td>
+    </tr>
+    <tr>
+        <td rowspan="3" class="yellow">Past</td>
+        <td class="yellow">+</td>
+        <td class="simple">Ved/V<sub>2</sub></td>
+        <td class="prog">was/were + Ving</td>
+        <td class="perf">had + Ved/V<sub>3</sub></td>
+        <td class="pp">had + been + Ving</td>
+    </tr>
+    <tr>
+        <td class="yellow">?</td>
+        <td class="simple">did + V</td>
+        <td class="prog">inversion</td>
+        <td class="perf">inversion</td>
+        <td class="pp">inversion</td>
+    </tr>
+    <tr>
+        <td class="yellow">-</td>
+        <td class="simple">did + not + V</td>
+        <td class="prog">was/were + not + Ving</td>
+        <td class="perf">had + not + Ved/V<sub>3</sub></td>
+        <td class="pp">had + not + been + Ving</td>
+    </tr>
+
+    <tr>
+        <td colspan="2" class="yellow">Period of time</td>
+        <td class="simple">tomorrow, next week (month, year)</td>
+        <td class="prog">tomorrow at 3p.m., tomorrow from 6 till 7, when you come</td>
+        <td class="perf">tomorrow by 3p.m., before some time in the future</td>
+        <td class="pp">tomorrow since 3p.m., for some time in the future</td>
+    </tr>
+    <tr>
+        <td rowspan="3" class="yellow">Future</td>
+        <td class="yellow">+</td>
+        <td class="simple">will + V</td>
+        <td class="prog">will + be + Ving</td>
+        <td class="perf">will + have + Ved/V<sub>3</sub></td>
+        <td class="pp">will + have + been + Ving</td>
+    </tr>
+    <tr>
+        <td class="yellow">?</td>
+        <td class="simple">inversion</td>
+        <td class="prog">inversion</td>
+        <td class="perf">inversion</td>
+        <td class="pp">inversion</td>
+    </tr>
+    <tr>
+        <td class="yellow">-</td>
+        <td class="simple">won't + V</td>
+        <td class="prog">won't + be + Ving</td>
+        <td class="perf">won't + have + Ved/V<sub>3</sub></td>
+        <td class="pp">won't + have + been + Ving</td>
+    </tr>
+</table>
 
 </body>
 </html>
