@@ -1,59 +1,50 @@
-
 <!DOCTYPE html>
+<html lang="uk">
 <head>
-<meta charset="UTF-8">
-<style>
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(3, 350px);
-        gap: 20px;
-        
-    }
-
-    .column {
-        display: grid;
-        gap: 20px;
-        align-content: start;
-    }
-
-    .column:nth-child(1) {
-        grid-template-rows: 150px 220px 100px;
-    }
-
-    .column:nth-child(2) {
-        grid-template-rows: 100px 230px 150px;
-    }
-
-    .column:nth-child(3) {
-        grid-template-rows: 100px 350px 150px;
-    }
-
-    .box {
-        background: #c4c4c4;
-    }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HYGGY — Категорії</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<div class="grid">
-    <div class="column">
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
+<div class="container">
+  <header>
+    <div class="top">
+      <img src="images/logo.png" alt="HYGGY" class="logo">
+      <div>☰ Меню</div>
+      <input type="text" placeholder="Пошук...">
+      <div><img src="images/obrane.png" alt="">Обране</div>
+      <div><img src="images/vhid.png" alt="">Вхід</div>
+      <div><img src="images/koshik.png" alt="">Кошик</div>
     </div>
+    <nav>
+      <span> Київ ТЦ Променада</span>
+      <a href="#">Блог</a>
+      <a href="#">Магазини</a>
+      <a href="#">Питання-відповідь</a>
+      <a href="#">Робота</a>
+    </nav>
+  </header>
 
-    <div class="column">
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-    </div>
+  <p class="path">Головна &gt; Магазин &gt; Категорії</p>
+  <h1>Категорії</h1>
 
-    <div class="column">
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-    </div>
+  <main class="categories">
+    <div><img src="images/05fadbfacc4173cf1cdbfec45ce5caacca82a10d.png" alt=""><span>Спальня</span></div>
+    <div><img src="images/33ce82a7d5fb5d3258edcfac5699c3ecde57105a.png" alt=""><span>Ванна</span></div>
+    <div><img src="images/51d338ef9225b84fe26b3ece8625cba7e8c2f03b.png" alt=""><span>Офіс</span></div>
+    <div><img src="images/65a03cf08847d36bfcc15b37b7d59e53f7fe13ce.png" alt=""><span>Вітальня</span></div>
+    <div><img src="images/kitchen.png" alt=""><span>Кухня</span></div>
+    <div><img src="images/2310a421e67d085bb7c1ca5e13f4eae1a8d2001a.png" alt=""><span>Для саду</span></div>
+    <div><img src="images/67209ceed5bf9d71621f853f7b3cd017f402b94b.png" alt=""><span>Дитяча кімната</span></div>
+    <div><img src="images/4614135f9a06009fbe304bc846b7bd5b5a095e39.png" alt=""><span>Їдальня</span></div>
+    <div><img src="images/b5b03fb82aefbafd5242130418eac2e664d49e57.png" alt=""><span>Коридор</span></div>
+    <div><img src="images/e81fd3eccff42b80a5b6e855818ad3e04d551ce4.png" alt=""><span>Пральня</span></div>
+    <div><img src="images/e833e4b2df4719be94c0ed64e31c30e03c37b3bf.png" alt=""><span>Зберігання</span></div>
+    <div><img src="images/f9e6a12a7ef5a330e5ae601a2c6b09fe5c60b8a6.png" alt=""><span>Для сну</span></div>
+  </main>
+
+  <div class="pages">&lt; <span>1</span> <span>2</span> <span>...</span> <span>10</span> &gt;</div>
 </div>
-
 </body>
 </html>
