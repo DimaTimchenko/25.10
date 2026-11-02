@@ -1,295 +1,59 @@
+
 <!DOCTYPE html>
-<html lang="uk">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>HYGGY — Категорії</title>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-* {
- box-sizing: border-box; margin: 0; padding: 0;
-}
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 350px);
+        gap: 20px;
+        
+    }
 
-body {
- font-family: Raleway, Arial, sans-serif; background: #f3f3f3; color: #1a1a1a;
-}
+    .column {
+        display: grid;
+        gap: 20px;
+        align-content: start;
+    }
 
-header {
- background: #fff; border-top: 30px solid #00a9a5;
-}
+    .column:nth-child(1) {
+        grid-template-rows: 150px 220px 100px;
+    }
 
-header > div {
- display: flex; flex-wrap: wrap; align-items: center; gap: 20px; padding: 15px 40px;
-}
+    .column:nth-child(2) {
+        grid-template-rows: 100px 230px 150px;
+    }
 
-header > div + div {
- justify-content: space-between; border-top: 1px solid #ddd; font-size: 13px;
-}
+    .column:nth-child(3) {
+        grid-template-rows: 100px 350px 150px;
+    }
 
-header img {
- height: 36px;
-}
-
-header > div + div img {
- height: 16px;
-}
-
-header > div + div span {
- display: flex; align-items: center; gap: 8px;
-}
-
-header input {
- flex: 1; min-width: 200px; height: 40px; border: 0; border-radius: 4px; padding: 0 15px; background: #ddd;
-}
-
-header div div {
- display: flex; gap: 15px; text-align: center; font-size: 11px;
-}
-
-header div div img {
- display: block; height: 22px; margin: 0 auto;
-}
-
-header nav {
- display: flex; gap: 20px;
-}
-
-header nav a {
- background: #ddd; padding: 8px 20px;
-}
-
-main, footer > div {
- max-width: 1000px; margin: 0 auto; padding: 0 20px;
-}
-
-main h1 {
- text-align: center; font-size: 24px; margin: 40px 0;
-}
-
-main section {
- display: flex; flex-wrap: wrap; gap: 20px;
-}
-
-main section div {
- position: relative; flex: 1 1 280px; max-width: 324px; height: 225px;
-}
-
-main section img {
- width: 100%; height: 100%; object-fit: cover; display: block;
-}
-
-main section span {
- position: absolute; left: 20px; top: 15px; font-size: 18px; font-weight: 600; color: #333;
-}
-
-main nav {
- display: flex; justify-content: center; align-items: center; gap: 10px; margin: 40px 0 60px; font-size: 22px;
-}
-
-main nav a {
- width: 28px; height: 22px; border: 1px solid #555; border-radius: 4px; background: #eee; font-size: 11px; display: flex; align-items: center; justify-content: center;
-}
-  
-
-body > section:first-of-type {
- display: flex; flex-wrap: wrap; justify-content: center; gap: 30px;
-}
-
-body > section div {
- flex: 1 1 200px; max-width: 220px; text-align: center; font-size: 9px;
-}
-
-body > section img {
- height: 40px; margin-bottom: 8px;
-}
-
-body > section:last-of-type {
- padding: 30px 20px 50px; text-align: center; margin-bottom: 40px;
-}
-
-body > section h2 {
- font-size: 13px; margin-bottom: 20px;
-}
-
-body > section:last-of-type p {
- font-size: 11px; max-width: 640px; margin: 0 auto 30px;
-}
-
-form {
- display: flex; flex-wrap: wrap; gap: 15px; max-width: 1000px; margin: 0 auto;
-}
-
-form input, form button {
- flex: 1 1 200px; height: 40px; border: 0; padding: 0 20px; background: #ddd; font-size: 14px;
-}
-
-form input {
- flex-grow: 2;
-}
-
-form button {
- border-radius: 3px; background: #00a9a5; color: #fff; font-weight: 700;
-}
-
-footer {
- background: #00a9a5; color: #fff; padding: 30px 0 40px;
-}
-
-footer section {
- display: flex; flex-wrap: wrap; align-items: flex-start; gap: 20px; min-height: 420px;
-}
-
-footer section div {
- flex: 1 1 180px; font-size: 13px;
-}
-
-footer h3 {
- font-size: 15px; margin-bottom: 20px;
-}
-
-footer a {
- display: block; margin-bottom: 14px;
-}
-
-footer p {
- line-height: 1.3; margin-bottom: 18px;
-}
-
-footer > div > div {
- display: flex; gap: 20px;
-}
-
-footer span {
- display: flex; align-items: center; justify-content: center; min-width: 60px; height: 36px; padding: 0 8px; background: #fff; color: #1a1f71; font-weight: 800; font-size: 14px;
-}
+    .box {
+        background: #c4c4c4;
+    }
 </style>
 </head>
 <body>
 
-<header>
-  <div>
-    <img src="images/logo.png" alt="HYGGY">
-    <span>☰ Меню</span>
-    <input type="search" placeholder="Пошук...">
-    <div>
-      <span><img src="images/obrane.png" alt="">Обране</span>
-      <span><img src="images/vhid.png" alt="">Вхід</span>
-      <span><img src="images/koshik.png" alt="">Кошик</span>
+<div class="grid">
+    <div class="column">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
     </div>
-  </div>
 
-  <div>
-    <span><img src="images/hyggy.png"> Київ ТЦ Променада ⌄</span>
-    <nav>
-      <a>Блог</a>
-      <a>Магазини</a>
-      <a>Питання-відповідь</a>
-      <a>Робота</a>
-    </nav>
-  </div>
-</header>
-
-<main>
-  <h1>Категорії</h1>
-
-  <section>
-    <div><img src="images/05fadbfacc4173cf1cdbfec45ce5caacca82a10d.png" alt=""><span>Спальня</span></div>
-    <div><img src="images/33ce82a7d5fb5d3258edcfac5699c3ecde57105a.png" alt=""><span>Ванна</span></div>
-    <div><img src="images/51d338ef9225b84fe26b3ece8625cba7e8c2f03b.png" alt=""><span>Офіс</span></div>
-    <div><img src="images/65a03cf08847d36bfcc15b37b7d59e53f7fe13ce.png" alt=""><span>Вітальня</span></div>
-    <div><img src="images/kitchen.png" alt=""><span>Кухня</span></div>
-    <div><img src="images/2310a421e67d085bb7c1ca5e13f4eae1a8d2001a.png" alt=""><span>Для саду</span></div>
-    <div><img src="images/67209ceed5bf9d71621f853f7b3cd017f402b94b.png" alt=""><span>Дитяча кімната</span></div>
-    <div><img src="images/4614135f9a06009fbe304bc846b7bd5b5a095e39.png" alt=""><span>Їдальня</span></div>
-    <div><img src="images/b5b03fb82aefbafd5242130418eac2e664d49e57.png" alt=""><span>Коридор</span></div>
-    <div><img src="images/e81fd3eccff42b80a5b6e855818ad3e04d551ce4.png" alt=""><span>Пральня</span></div>
-    <div><img src="images/e833e4b2df4719be94c0ed64e31c30e03c37b3bf.png" alt=""><span>Зберігання</span></div>
-    <div><img src="images/f9e6a12a7ef5a330e5ae601a2c6b09fe5c60b8a6.png" alt=""><span>Для сну</span></div>
-  </section>
-
-  <nav>
-    <span>&lt;</span>
-    <a>1</a>
-    <a>2</a>
-    <a>...</a>
-    <a>10</a>
-    <span>&gt;</span>
-  </nav>
-</main>
-
-<section>
-  <div>
-    <img src="images/coach.png" alt="">
-    <p>Різноманітний вибір сучасних рішень для декорування та облаштування як інтер'єру, так і екстер'єру.</p>
-  </div>
-  <div>
-    <img src="images/flag.png" alt="">
-    <p>Наш стиль нагадує скандинавський, але ми виходимо за рамки одного напряму, пропонуючи універсальні та функціональні варіанти, що задовольняють різні смаки.</p>
-  </div>
-  <div>
-    <img src="images/blank.png" alt="">
-    <p>Ми орієнтовані на різні категорії покупців, пропонуючи товари в діапазоні від середньо-низьких до середньо-високих цін.</p>
-  </div>
-</section>
-
-<section>
-  <h2>Підпишись на розсилку новин та отримай код на безкоштовну доставку для свого першого замовлення!</h2>
-  <p>Підпишіться на нашу розсилку та отримайте бонус! 10% знижка на перше замовлення, ексклюзивні пропозиції та ранній доступ до розпродажів. Введіть свій email нижче та почніть отримувати переваги!</p>
-  <form>
-    <input type="text" placeholder="Ім'я">
-    <input type="email" placeholder="E-mail">
-    <button type="button">Поділитися</button>
-  </form>
-</section>
-
-<footer>
-  <div>
-    <section>
-      <div>
-        <h3>Категорії товарів</h3>
-        <a>Спальня</a>
-        <a>Ванна</a>
-        <a>Офіс</a>
-        <a>Вітальня</a>
-        <a>Кухня та їдальня</a>
-        <a>Зберігання</a>
-        <a>Для вікон</a>
-        <a>Для саду</a>
-        <a>Для дому</a>
-        <a>Усі категорії</a>
-      </div>
-      <div>
-        <h3>Інформація</h3>
-        <a>Зворотні зв'язок</a>
-        <a>Магазини і графіки роботи</a>
-        <a>Умови та положення</a>
-        <a>Доставка</a>
-        <a>Політика конфіденційності</a>
-      </div>
-      <div>
-        <h3>Hyggy</h3>
-        <a>Про нас</a>
-        <a>Робота в Hyggy</a>
-        <a>Підписатись на розсилку</a>
-        <a>Блог</a>
-        <a>B2B</a>
-        <a>Корисні посилання</a>
-      </div>
-      <div>
-        <h3>Центральний офіс</h3>
-        <p>ТОВ ""<br>м. ()<br>вул. ()<br>123456</p>
-        <p><b>HYGGY B2B</b><br>Тел: <u>+380123456789</u><br>Імейл: b2b@hyggy.com<br><u>Зв'яжіться з нами</u></p>
-        <p><b>Зворотній зв'язок:</b><br><u>email@hyggy.com</u><br>Тел: <u>+380123456789</u><br><u>Зв'яжіться з нами</u></p>
-      </div>
-    </section>
-
-    <div>
-      <span>VISA</span>
-      <span style="color:#eb001b">mastercard</span>
-      <span style="color:#444">G Pay</span>
+    <div class="column">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
     </div>
-  </div>
-</footer>
+
+    <div class="column">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</div>
 
 </body>
 </html>
