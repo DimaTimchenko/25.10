@@ -1,50 +1,101 @@
+
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>HYGGY — Категорії</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Contact</title>
+
+    <style>
+        input, select, textarea {
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            background: black;
+            color: white;
+            padding: 10px;
+            width: 100%;
+            border: none;
+        }
+    </style>
 </head>
 <body>
-<div class="container">
-  <header>
-    <div class="top">
-      <img src="images/logo.png" alt="HYGGY" class="logo">
-      <div>☰ Меню</div>
-      <input type="text" placeholder="Пошук...">
-      <div><img src="images/obrane.png" alt="">Обране</div>
-      <div><img src="images/vhid.png" alt="">Вхід</div>
-      <div><img src="images/koshik.png" alt="">Кошик</div>
-    </div>
-    <nav>
-      <span> Київ ТЦ Променада</span>
-      <a href="#">Блог</a>
-      <a href="#">Магазини</a>
-      <a href="#">Питання-відповідь</a>
-      <a href="#">Робота</a>
-    </nav>
-  </header>
 
-  <p class="path">Головна &gt; Магазин &gt; Категорії</p>
-  <h1>Категорії</h1>
+<form>
+    <h1>Contact</h1>
 
-  <main class="categories">
-    <div><img src="images/05fadbfacc4173cf1cdbfec45ce5caacca82a10d.png" alt=""><span>Спальня</span></div>
-    <div><img src="images/33ce82a7d5fb5d3258edcfac5699c3ecde57105a.png" alt=""><span>Ванна</span></div>
-    <div><img src="images/51d338ef9225b84fe26b3ece8625cba7e8c2f03b.png" alt=""><span>Офіс</span></div>
-    <div><img src="images/65a03cf08847d36bfcc15b37b7d59e53f7fe13ce.png" alt=""><span>Вітальня</span></div>
-    <div><img src="images/kitchen.png" alt=""><span>Кухня</span></div>
-    <div><img src="images/2310a421e67d085bb7c1ca5e13f4eae1a8d2001a.png" alt=""><span>Для саду</span></div>
-    <div><img src="images/67209ceed5bf9d71621f853f7b3cd017f402b94b.png" alt=""><span>Дитяча кімната</span></div>
-    <div><img src="images/4614135f9a06009fbe304bc846b7bd5b5a095e39.png" alt=""><span>Їдальня</span></div>
-    <div><img src="images/b5b03fb82aefbafd5242130418eac2e664d49e57.png" alt=""><span>Коридор</span></div>
-    <div><img src="images/e81fd3eccff42b80a5b6e855818ad3e04d551ce4.png" alt=""><span>Пральня</span></div>
-    <div><img src="images/e833e4b2df4719be94c0ed64e31c30e03c37b3bf.png" alt=""><span>Зберігання</span></div>
-    <div><img src="images/f9e6a12a7ef5a330e5ae601a2c6b09fe5c60b8a6.png" alt=""><span>Для сну</span></div>
-  </main>
+    <p>First name</p>
+    <input type="text" placeholder="First name" required>
 
-  <div class="pages">&lt; <span>1</span> <span>2</span> <span>...</span> <span>10</span> &gt;</div>
-</div>
+    <p>Last name</p>
+    <input type="text" placeholder="Last name" required>
+
+    <p>Phone</p>
+    <input type="tel" placeholder="Phone number" required>
+
+    <p>Email</p>
+    <input type="email"
+           placeholder="@gmail.com"
+           pattern="[A-Za-z][A-Za-z0-9]*@(gmail\.com|ukr\.net|itstep\.academy|itstep\.org)"
+           title="Use gmail.com, ukr.net, itstep.academy or itstep.org"
+           required>
+
+    <p>Password</p>
+    <input type="password"
+           placeholder="6-10"
+           pattern="[A-Za-z0-9]{6,10}"
+           title="Use 6 to 10 English letters or numbers"
+           required>
+
+    <p>Date and time</p>
+
+    Day:
+    <input type="number" min="1" max="31"
+           style="width: 45px;">
+
+    Month:
+    <select>
+        <option>January</option>
+        <option>February</option>
+        <option>March</option>
+        <option>April</option>
+        <option>May</option>
+        <option>June</option>
+        <option>July</option>
+        <option>August</option>
+        <option>September</option>
+        <option>October</option>
+        <option>November</option>
+        <option>December</option>
+    </select>
+
+    <p>Year</p>
+    <input type="number" min="2026">
+
+    <p>Time</p>
+    <input type="time">
+
+    <p>Seating preference</p>
+
+    <input type="radio" name="seat"> Indoor
+    <br>
+    <input type="radio" name="seat"> Outdoor
+
+    <p>Additional requests</p>
+    <textarea rows="3" cols="35"
+              placeholder="Your requests"></textarea>
+
+    <br>
+
+    <input type="checkbox">
+    subscribe
+
+    <br><br>
+
+    <button type="submit">Request booking</button>
+
+</form>
+
 </body>
 </html>
